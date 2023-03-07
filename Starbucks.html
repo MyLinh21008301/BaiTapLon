@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Starbucks</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link
+      rel="stylesheet"
+      href="/assets/fonts/themify-icons/themify-icons.css"
+    />
+    <script src="https://kit.fontawesome.com/d44c61054f.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="main">
+      <!--HEADER-->
+
+      <div id="header">
+        <ul id="header1">
+          <li id="logo" title="Logo Starbucks">
+            <img
+              src="/assets/image/logo_tcm89-366_w1024_n.png"
+              alt="Logo Starbucks"
+            />
+          </li>
+          <li id="name">
+            <a href="">starbucks</a>
+          </li>
+          <li>
+            <ul id="menutool">
+              <li><a href="">Menu</a></li>
+              <li><a href="">Trending</a></li>
+              <li><a href="">Rewards</a></li>
+              <li><a href="">Gift cards</a></li>
+              <li><a href="">Responsibility</a></li>
+              <li><a href="">About</a></li>
+            </ul>
+          </li>
+          <li id="Search">
+            <div>
+              <input type="" placeholder="Search" />
+              <button>
+                <img src="/assets/image/search.png" alt="" />
+              </button>
+            </div>
+          </li>
+          <li id="giohang">
+            <button>
+              <img src="/assets/image/giohang.png" alt="" />
+            </button>
+          </li>
+        </ul>
+      </div>
+      <!--BANNER-->
+      <div id="banner">
+        <div class="aspect-ratio-169">
+          <img src="/assets/image/slide2.png" alt="" />
+          <img src="/assets/image/slide7.jpeg" alt="" />
+          <img src="/assets/image/slide3.jpeg" alt="" />
+          <img src="/assets/image/slide4.webp" alt="" />
+          <img src="/assets/image/slide5.jpeg" alt="" />
+        </div>
+        <script>
+          const imgPosition = document.querySelectorAll(
+            ".aspect-ratio-169 img"
+          );
+          const imContainer = document.querySelector(".aspect-ratio-169");
+          let index = 0;
+          let sumImg = imgPosition.length;
+          imgPosition.forEach(function (image, index) {
+            image.style.left = index * 100 + "%";
+          });
+          function imgSlide() {
+            index++;
+            if (index >= sumImg) {
+              index = 0;
+            }
+            imContainer.style.left = "-" + index * 100 + "%";
+          }
+                    setInterval(imgSlide,3000)
+        </script>
+      </div>
+
+      <!-- CONTENT-->
+
+      <div id="content">
+        <div id="left-content">
+          <h1>Matcha Blended Cream</h1>
+          <div id="ratting">
+            <img src="/assets/image/goldStar.png" alt="" />
+            <img src="/assets/image/goldStar.png" alt="" />
+            <img src="/assets/image/goldStar.png" alt="" />
+            <img src="/assets/image/goldStar.png" alt="" />
+            <img src="/assets/image/whiteStar.png" alt="" />
+            <p id="comment">
+              Caramel ribbon meets coffee, milk and ice for a rendezvous in the
+              blender, while whipped cream and buttery caramel sauce layer the
+              love on top. To change things up, try it affogato-style with a hot
+              espresso shot poured right over the top.
+            </p>
+            <p id="Serve">Serve with</p>
+          </div>
+          <div class="withfood">
+            <button id="circle">
+              <img id="donut" src="/assets/image/donuts.png" alt="" />
+            </button>
+            <button id="circle">
+              <img id="yogurt" src="/assets/image/yogurt.png" alt="" />
+            </button>
+            <button id="circle">
+              <img id="cookies" src="/assets/image/cookies.png" alt="" />
+            </button>
+            <div id="namefood">
+              <b id="name1">Donut</b>
+              <b id="name2">Yogurt</b>
+              <b id="name3">Cookies</b>
+            </div>
+          </div>
+          <div class="buy">
+            <div id="buy-amount">
+              <button id="amount">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M19.5 12h-15"
+                  />
+                </svg>
+              </button>
+              <input type="text" id="text-amount" value="1" />
+              <button id="amount">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 4.5v15m7.5-7.5h-15"
+                  />
+                </svg>
+              </button>
+              <button id="buy-button">ADD TO CARD ▶️</button>
+            </div>
+          </div>
+        </div>
+        <div id="right-content">
+          <div id="backroungh-circle">
+            <img src="/assets/image/match1.jpeg" alt="" />
+            <!-- <img src="/assets/image/chocolate1.jpeg" alt="">
+                        <img src="/assets/image/mango1.jpeg" alt="">
+                        <img src="/assets/image/strawberry1.webp" alt=""> -->
+          </div>
+          <div id="button-img">
+            <button>
+              <img src="/assets/image/chocolate1.jpeg" alt="" />
+            </button>
+            <button>
+              <img src="/assets/image/mango1.jpeg" alt="" />
+            </button>
+            <button>
+              <img src="/assets/image/strawberry1.webp" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div id="footer">
+        <div id="box1">
+          <div id="collumn1">
+            <h3>About Us</h3>
+            <div id="cln">
+              <div><a href="">Our Company</a></div>
+              <div><a href="">Our Coffee</a></div>
+              <div><a href="">Stories and News</a></div>
+              <div><a href="">Starbucks Archive</a></div>
+              <div><a href="">Investor Relations</a></div>
+              <div><a href="">Customer Service</a></div>
+            </div>
+          </div>
+          <div id="collumn2">
+            <h3>Careers</h3>
+            <div id="cln">
+                        <div><a href="">Culture and Values</a></div>
+                        <div><a href="">Inclusion, Diversity, and Equity</a></div>
+                        <div><a href="">College Achievement Plan</a></div>
+                        <div><a href="">Alumni Community</a></div>
+                        <div><a href="">U.S. Careers</a></div>
+                        <div><a href="">International Careers</a></div>
+                      </div>
+          </div>
+          <div id="collumn3">
+            <h3>Social Impact</h3>
+            <div id="cln">
+                        <div><a href="">People</a></div>
+                        <div><a href="">Planet</a></div>
+                        <div><a href="">Environmental and Social Impact Reporting</a></div>
+                      </div>
+          </div>
+        </div>
+        <hr>
+        <div id="box2">
+            <div id="app">
+                        <i class="fa-brands fa-square-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-square-twitter"></i>
+                        <i class="fa-brands fa-square-pinterest"></i>
+                        <i class="fa-brands fa-spotify"></i>
+            </div>
+            <div id="contact">
+                        <a href="">Privacy Notice</a>
+                        <a href="">Terms of Use</a>
+                        <a href="">Do Not Share My Personal Information</a>
+                        <a href="">CA Supply Chain Act</a>
+                        <a href="">Cookie</a>
+            </div>
+        </div>
+        <div id="box3">
+            © 2023 Starbucks Coffee Company. All rights reserved.
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
