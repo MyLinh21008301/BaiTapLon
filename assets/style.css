@@ -454,3 +454,23 @@
   font-size: 12px;
   padding-left: 5px;
 }
+
+#footer #box2 #app .fa-logo:hover {
+  color: #4267b2;
+}
+
+#footer #box2 #app .ins-logo:hover{
+  color: #CD486B;
+}
+
+#footer #box2 #app .twi-logo:hover{
+  color: #1DA1F2;
+}
+
+#footer #box2 #app .pin-logo:hover{
+  color: #E60023
+}
+
+#footer #box2 #app .spo-logo:hover{
+  color: #1DB954;
+}
