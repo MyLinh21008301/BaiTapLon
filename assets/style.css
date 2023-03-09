@@ -474,3 +474,101 @@
 #footer #box2 #app .spo-logo:hover{
   color: #1DB954;
 }
+
+
+/* Menu Begin */
+
+.color-white{
+  color: #FFFFFF;
+}
+
+.padd20_bot-top{
+  padding: 5px 0px;
+}
+
+.padd25_right{
+  padding-right: 25px;
+}
+
+.padd15_right{
+  padding-right: 15px;
+}
+
+.padd16_top{
+  padding-top: 16px;
+}
+
+.menu__title{
+  padding: 40px 32px 32px 32px;
+  text-align: center;
+}
+
+#menu{
+  display: flex;
+  font-size: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 10px 15px 0px 15px;
+  font-weight: bold;
+}
+#menu__left{
+  border-radius: 15px 0px 0px 15px;
+  background-color: #CDBA96;
+  width: 55%;
+}
+.menu__left--title{
+  color: #FFFFFF;
+  text-shadow: 6px 6px 6px #1DB954;
+}
+.menu__left--content{
+  margin-left: 25px;
+  
+}
+.menu__left--table{
+  width: 100%;
+  padding: 0px 32px 32px 32px;
+}
+
+
+
+
+
+#menu__right{
+  background-color: #C8E2B1;
+  margin-left: 10px;
+  padding: 0px 48px;
+  width: 45%;
+  border-radius: 0px 15px 15px 0px;
+}
+
+.menu__right--title{
+  color: #FFFFFF;
+  text-shadow: 8px 8px 8px #dac296;
+  margin-top: 8px;
+}
+
+.menu__right--big-content{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.menu__right--small-content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+
+.menu__right--small-content-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu__right--small-content-image{
+  width: 107px;
+  height: 85px;
+  margin-bottom: 8px;
+}
+/* Menu End */
